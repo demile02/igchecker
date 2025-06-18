@@ -1,4 +1,4 @@
-<script>
+
     let followersList = [];
     let followingList = [];
 
@@ -38,6 +38,4 @@
 
         html += `</tbody></table>`;
         document.getElementById("result").innerHTML = html;
-      });
-    }
-</script>
+      
