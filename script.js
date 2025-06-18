@@ -13,7 +13,7 @@
     function processFiles() {
       const followersFile = document.getElementById("followersFile").files[0];
       const followingFile = document.getElementById("followingFile").files[0];
-
+      
       if (!followersFile || !followingFile) {
         alert("Mohon unggah kedua file terlebih dahulu.");
         return;
@@ -38,4 +38,5 @@
 
         html += `</tbody></table>`;
         document.getElementById("result").innerHTML = html;
-      
+      });
+    }
