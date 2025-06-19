@@ -6,16 +6,42 @@
   <title>Instagram Unfollowers Checker</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <script src="script.js"></script>
   <div class="container">
-    <h2>Cek Siapa yang Tidak Follow Balik Instagram Kamu</h2>
-    <p>Unggah <strong>1. followers_1.html</strong> dan <strong>2. following.html</strong> milikmu, jangan sampai terbalik!</p>
-    <input type="file" id="followersFile" accept=".html" />
-    <input type="file" id="followingFile" accept=".html" />
+    <h2>Cek Siapa yang Tidak Follow Back Instagram Kamu</h2>
+    <p>Unggah <strong>followers_1.html</strong> dan <strong>following.html</strong> milikmu, jangan sampai terbalik!</p>
+
+    <div class="upload-group">
+    <label for="followersFile" class="upload-btn" id="followersLabel">📂 Unggah followers_1.html</label>
+    <input type="file" id="followersFile" accept=".html" hidden />
+    <label for="followingFile" class="upload-btn" id="followingLabel">📂 Unggah following.html</label>
+    <input type="file" id="followingFile" accept=".html" hidden />
+    <!--input type="file" id="followersFile" accept=".html" />
+    <input type="file" id="followingFile" accept=".html" /-->
+    </div>
     <button onclick="processFiles()">🔍 Cek Sekarang</button>
     <div id="result"></div>
+    <div class="tutorial-section" id="tutorial">
+      <h3 style="text-align:center;">📱 Cara Mendapatkan File <strong>followers_1.html</strong> & <strong>following.html</strong></h3>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+        <img src="img/1.png" alt="Tutorial 1">
+        <img src="img/2.png" alt="Tutorial 2">
+        <img src="img/3.png" alt="Tutorial 3">
+        <img src="img/4.png" alt="Tutorial 4">
+        <img src="img/5.png" alt="Tutorial 5">
+        <img src="img/6.png" alt="Tutorial 6">
+        <img src="img/7.png" alt="Tutorial 7">
+        <img src="img/8.png" alt="Tutorial 8">
+        <img src="img/9.png" alt="Tutorial 9">
+        <img src="img/10.png" alt="Tutorial 10">
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
